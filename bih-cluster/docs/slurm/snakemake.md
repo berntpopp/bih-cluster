@@ -76,7 +76,7 @@ The `cubi-v1` profile (stored in `/etc/xdg/snakemake/cubi-v1` on all cluster nod
 * `resources.partition`: the partition to submit your job into (Slurm will pick a fitting partition for you by default)
 * `resources.nodes`: the number of nodes to schedule your job on (defaults to `1` and you will want to keep that value unless you want to use MPI)
 
-You will need Snakemake >=7.0.2 for this.
+You will need Snakemake >=7.0.2 and <8.0.0 (versions from 8 on do not support some settings in the cubi-v1 profile) for this.
 
 Here is how to call Snakemake:
 
